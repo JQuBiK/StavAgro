@@ -43,6 +43,26 @@
         </div>           
     </nav>
     <main>
+                                                    <!-- Модальное окно -->
+        <div class="modalWindowBg">
+            <div class="container">
+                <div class="modalWindow">
+                    <div class="modalWindow__tilte">Выберите тип услуги</div>
+                    <button class="modalWindow__closeBtn"></button>
+                    <div class="modalWindow__checkBlock">
+                        <button class="modalWindow__check">Техника</button>
+                        <button class="modalWindow__check">Сервис</button> 
+                    </div>                                        
+                    <form class="modalWindow__form" action="">
+                            <input type="text" placeholder="Имя">
+                            <input type="tel" placeholder="Телефон">
+                            <input type="email" placeholder="Почта">
+                    </form>
+                    <button class="modalWindow__sendBtn">Заказать звонок</button>
+                </div>
+            </div>           
+        </div>
+                                                        <!--  -->
         <section class="bord">
             <img src="img/mainbg.png" alt="" class="bord__img">
         </section>
@@ -141,5 +161,6 @@
             <div class="footer__inn">инн: <span>2634109033</span></div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
