@@ -427,3 +427,183 @@ main
         text-transform: uppercase
         color: #FFFFFF
         cursor: pointer
+
+.backToMainPage
+    display: block
+    margin-top: 50px
+    position: relative
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+    border-bottom: 1px solid #000 
+    padding-bottom: 0
+    width: 302px
+    &:hover
+        color: #000
+        text-decoration: none
+    &::after
+        content: ''
+        display: block
+        width: 24px
+        height: 17px
+        position: absolute
+        background: url('../icons/arrow.png')center center/cover no-repeat
+        top: 3px
+        left: -45px 
+.technicalNSpareParts
+    padding: 55px 0 60px 0  
+    &__title
+        font-style: normal
+        font-weight: 700
+        font-size: 38px
+        line-height: 46px
+        text-transform: uppercase
+        color: #000000
+    &__brandsSort
+        margin-top: 60px
+        display: block
+        &__title
+            font-style: normal
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            text-align: center
+        &__block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 30px auto 0 auto
+        &__links
+            display: flex
+            border: 1px solid #000000
+            width: 255px
+            height: 70px
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            background-color: #FFF6EA
+            &:active
+                outline: none 
+            &:focus
+                outline: none 
+        &__img
+            display: flex
+            &:first-child
+                width: 210px
+        &__links.active
+            background-color: #fff
+            display: flex
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
+.kverneland
+    &__block
+        background-color: #fff
+        width: 100%
+        display: block
+        padding: 16px 0 16px 0
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
+    &__img
+        display: block
+        margin: 0 auto
+        width: 350px
+        height: 78px        
+.sortPanel
+    display: flex
+    margin: 30px auto 0 auto
+    align-items: center
+    flex-direction: row
+    flex-wrap: wrap   
+    justify-content: center
+    &__btn
+        display: flex
+        font-weight: 700
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+        border: none
+        border-right: 1px solid #000 
+        padding: 0 20px 0 20px
+        outline: none
+        margin-top: 30px
+        background-color: #FFF6EA
+        text-transform: uppercase
+        cursor: pointer
+        &:nth-child(6), &:nth-child(10)
+            border: none
+.plows
+    padding-top: 100px
+    &__title         
+        font-style: normal
+        font-weight: 900
+        font-size: 38px
+        line-height: 46px
+        color: #000000
+        text-align: center
+        text-transform: uppercase
+    &__subTitle
+        margin-top: 60px
+        font-weight: 600
+        font-size: 28px
+        line-height: 34px
+        color: #000000
+.card
+    margin-top: 30px
+    display: block
+    &__link   
+        display: block
+        &__img
+            display: block
+            &:hover
+                background-color: rgba(255, 255, 255, 0.05)
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 60px rgba(0, 0, 0, 0.25)
+                backdrop-filter: blur(60px)
+                border-radius: 10px 10px 0px 0px
+            &:hover
+                background-color: rgba(255, 255, 255, 0.05)
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 60px rgba(0, 0, 0, 0.25)
+                backdrop-filter: blur(60px)
+                border-radius: 10px 10px 0px 0px
+    &__body
+        width: 350px
+        height: 220px
+        background: #FFFFFF
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16)
+        border-radius: 0px 0px 10px 10px
+        padding: 10px 0 10px 10px
+        position: relative
+        &__title
+            font-style: normal
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+        &__descr
+            display: block
+            margin-top: 10px
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            color: #000000
+        &__descr span
+            display: block
+            margin-top: 10px
+        &__btn
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+            width: 160px
+            height: 40px
+            background: #007737
+            border: 1px solid #007737
+            border-radius: 5px
+            color: #fff
+            font-style: normal
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+            text-align: center
+            text-transform: uppercase
+            cursor: pointer

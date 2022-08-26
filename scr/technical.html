@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="subheader">
+                <div class="subheader__descr">Nchernienko@stavagro.сom</div>
+                <a href="tel:+79624021236" class="subheader__descr">+7 (962) 402—12—36</a>
+                <a href="#" class="subheader__descr">Официальный дилер Kverneland<span></span></a>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="img/Logo.png" alt="logo" class="logo">
+                </div>
+                <div class="col-md-7">
+                    <div class="navigation__list">
+                        <a href="" class="navigation__link">Главная</a>
+                        <a href="" class="navigation__link">Техника</a>
+                        <a href="" class="navigation__link">Сервис</a>
+                        <a href="" class="navigation__link">О нас</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <button class="navigation__btn openModalWindow">Оставить заявку</button>
+                </div>
+            </div>
+        </div>           
+    </nav>
+    <main>                                             <!-- Модальное окно -->
+        <div class="modalWindowBg">
+            <div class="modalWindow">
+                <div class="modalWindow__tilte">Выберите тип услуги</div>
+                <button class="modalWindow__closeBtn"></button>
+                <div class="modalWindow__checkBlock">
+                    <button class="modalWindow__check__technical">Техника</button>
+                    <button class="modalWindow__check__service">Сервис</button> 
+                </div>                                        
+                <form class="modalWindow__form" action="">
+                        <input type="text" placeholder="Имя">
+                        <input type="tel" placeholder="Телефон">
+                        <input type="email" placeholder="Почта">
+                </form>
+                <button class="modalWindow__sendBtn">Заказать звонок</button>
+            </div>         
+        </div>
+        <section class="bord">
+            <img src="img/mainbg.png" alt="" class="bord__img">
+        </section>
+        <div class="container">
+            <a href="index.html" class="backToMainPage">Вернуться на главную страницу</a>
+        </div>        
+        <section class="technicalNSpareParts">
+            <div class="container">
+                <div class="technicalNSpareParts__title">техника и запасные части</div>
+                <div class="technicalNSpareParts__brandsSort">
+                    <div class="technicalNSpareParts__brandsSort__title">Выберите желаемый бренд</div>
+                    <div class="technicalNSpareParts__brandsSort__block">          
+                        <button href="" id="linkSort1" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/kverneland.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </button>
+                        <button href="" id="linkSort2" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/liliani.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </button>
+                        <button href="" id="linkSort3" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/samasz.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </button>
+                        <button href="" id="linkSort4" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/rainfine.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </button>
+                    </div>
+                </div>            
+            </div>
+        </section>
+        <section class="kverneland">
+            <div class="kverneland__block">
+                <div class="container">
+                    <img src="img/kverneland.png" alt="" class="kverneland__img">
+                </div>
+            </div>    
+            <div class="container">
+                <div class="sortPanel">
+                    <button class="sortPanel__btn">все</button>
+                    <button class="sortPanel__btn">плуги</button>
+                    <button class="sortPanel__btn">Разбрасыватели</button>
+                    <button class="sortPanel__btn">ПОЧВООБРАБОТКА</button>
+                    <button class="sortPanel__btn">МУЛЬЧИРОВЩИКИ</button>
+                    <button class="sortPanel__btn">CЕЯЛКИ</button>
+                    <button class="sortPanel__btn">ОПРЫСКИВАТЕЛИ</button>
+                    <button class="sortPanel__btn">КОРМОЗАГОТОВКА</button>
+                    <button class="sortPanel__btn">ПРЕСС-ПОДБОРЩИКИ</button>
+                    <button class="sortPanel__btn">ТЕХНИКА ДЛЯ КОРМЛЕНИЯ</button>
+                </div>
+            </div>  
+        </section>
+        <section class="plows">
+            <div class="container">
+                <div class="plows__title">ПЛУГИ</div>
+                <div class="plows__subTitle">Навесные оборотные плуги</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card1.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland 150 S Variomat</div>
+                                <div class="card__body__descr">Для легких и средних почв,<br>каменистые условия.<span>3 - 5 Корпусов</span> 
+                                </div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card2.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland ED - LD</div>
+                                <div class="card__body__descr">Повышенная прочность. <span>2 - 6 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card3.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title"></div>
+                                <div class="card__body__descr"></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card4.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title"></div>
+                                <div class="card__body__descr"></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card5.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title"></div>
+                                <div class="card__body__descr"></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card6.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title"></div>
+                                <div class="card__body__descr"></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card7.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title"></div>
+                                <div class="card__body__descr"></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>          
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="img/Logo.png" alt="" class="footer__logo__img">
+            </div>           
+            <div class="footer__email">Администратор — <span>Mchernienko@Stavagro.com</span></div>
+            <hr class="footer__email__hr">
+            <div class="footer__phone">
+                <a href="tel:+79624021236"">+7 (962) 402—12—36</a>
+            </div>          
+            <hr class="footer__phone__hr">
+            <div class="footer__inn">инн: <span>2634109033</span></div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
