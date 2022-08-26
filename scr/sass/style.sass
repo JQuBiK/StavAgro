@@ -313,6 +313,16 @@ main
     background: rgba(0, 0, 0, .7)
     overflow: auto
     z-index: 10
+    opacity: 0
+    pointer-events: none
+    transition: 0.5s all
+.modalWindowBg.active
+    opacity: 1
+    pointer-events: all
+    transition: 0.5s all
+.modalWindow.active
+    transform: translate(-50%, -50%) scale(1)
+    transition: 0.5s all
 .modalWindow
     position: absolute
     width: 730px
@@ -320,10 +330,11 @@ main
     left: 50%
     top: 50%
     display: block
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%) scale(0)
     background-color: #FFFFFF
     border-radius: 10px
     padding: 30px 0 30px 0
+    transition: 0.5s all
     &__tilte
         font-style: normal
         font-weight: 500
@@ -340,7 +351,14 @@ main
         top: 30px
         background: url('../icons/close.png')center center/cover no-repeat
         cursor: pointer
-    &__check
+        border: none
+        &:active
+            border: none
+            outline: none
+        &:focus
+            border: none
+            outline: none
+    &__check__technical
         width: 255px
         height: 70px
         background: #FFF
@@ -354,14 +372,31 @@ main
         font-size: 28px
         line-height: 34px
         color: #000000
+        background-color: #fff
+    &__check__service
+        width: 255px
+        height: 70px
+        background: #FFF
+        border: 1px solid #000000
+        border-radius: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        font-weight: 600
+        font-size: 28px
+        line-height: 34px
+        color: #000000
+        background-color: #fff
+    &__check__technical.active
+        background-color: #FFE558
+    &__check__service.active
+        background-color: #FFE558
     &__checkBlock
         display: flex
         margin: 30px 95px 0 95px
         align-items: center
         justify-content: space-between
-        background-color: #fff
-    &__checkBlock .active
-        background-color: #FFE558
     &__form
         display: block
         margin: 30px auto 0 auto

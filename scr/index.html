@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <button class="navigation__btn">Оставить заявку</button>
+                    <button class="navigation__btn openModalWindow">Оставить заявку</button>
                 </div>
             </div>
         </div>           
@@ -45,22 +45,20 @@
     <main>
                                                     <!-- Модальное окно -->
         <div class="modalWindowBg">
-            <div class="container">
-                <div class="modalWindow">
-                    <div class="modalWindow__tilte">Выберите тип услуги</div>
-                    <button class="modalWindow__closeBtn"></button>
-                    <div class="modalWindow__checkBlock">
-                        <button class="modalWindow__check">Техника</button>
-                        <button class="modalWindow__check">Сервис</button> 
-                    </div>                                        
-                    <form class="modalWindow__form" action="">
-                            <input type="text" placeholder="Имя">
-                            <input type="tel" placeholder="Телефон">
-                            <input type="email" placeholder="Почта">
-                    </form>
-                    <button class="modalWindow__sendBtn">Заказать звонок</button>
-                </div>
-            </div>           
+            <div class="modalWindow">
+                <div class="modalWindow__tilte">Выберите тип услуги</div>
+                <button class="modalWindow__closeBtn"></button>
+                <div class="modalWindow__checkBlock">
+                    <button class="modalWindow__check__technical">Техника</button>
+                    <button class="modalWindow__check__service">Сервис</button> 
+                </div>                                        
+                <form class="modalWindow__form" action="">
+                        <input type="text" placeholder="Имя">
+                        <input type="tel" placeholder="Телефон">
+                        <input type="email" placeholder="Почта">
+                </form>
+                <button class="modalWindow__sendBtn">Заказать звонок</button>
+            </div>         
         </div>
                                                         <!--  -->
         <section class="bord">
@@ -114,7 +112,7 @@
                     — Диагностика на стенде и ремонт высевающих аппаратов KINZE. <br>
                     — Техническая консультация и помощь по устранению неисправностей в телефонном режиме. <br>
                 </div>
-                <div class="service__btn">Оставить заявку на сервис</div>
+                <div class="service__btn openModalWindow">Оставить заявку на сервис</div>
             </div>
         </section>
         <section class="about">
