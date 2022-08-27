@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техника и запасные части</title>
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="subheader">
+                <div class="subheader__descr">Nchernienko@stavagro.сom</div>
+                <a href="tel:+79624021236" class="subheader__descr">+7 (962) 402—12—36</a>
+                <a href="#" class="subheader__descr">Официальный дилер Kverneland<span></span></a>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="img/Logo.png" alt="logo" class="logo">
+                </div>
+                <div class="col-md-7">
+                    <div class="navigation__list">
+                        <a href="" class="navigation__link">Главная</a>
+                        <a href="" class="navigation__link">Техника</a>
+                        <a href="" class="navigation__link">Сервис</a>
+                        <a href="" class="navigation__link">О нас</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <button class="navigation__btn openModalWindow">Оставить заявку</button>
+                </div>
+            </div>
+        </div>           
+    </nav>
+    <main>                                             <!-- Модальное окно -->
+        <div class="modalWindowBg">
+            <div class="modalWindow">
+                <div class="modalWindow__tilte">Выберите тип услуги</div>
+                <button class="modalWindow__closeBtn"></button>
+                <div class="modalWindow__checkBlock">
+                    <!-- <button class="modalWindow__check__technical">Техника</button>
+                    <button class="modalWindow__check__service">Сервис</button>  -->
+                </div>                                        
+                <form class="modalWindow__form" action="">
+                    <input type="checkbox" name="checkTech" class="modalWindow__check__technical">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="Почта">
+                </form>
+                <button class="modalWindow__sendBtn">Заказать звонок</button>
+            </div>         
+        </div>
+        <section class="bord">
+            <img src="img/mainbg.png" alt="" class="bord__img">
+        </section>
+        <div class="container">
+            <a href="index.html" class="backToMainPage">Вернуться на главную страницу</a>
+        </div>        
+        <section class="technicalNSpareParts">
+            <div class="container">
+                <div class="technicalNSpareParts__title">техника и запасные части</div>
+                <div class="technicalNSpareParts__brandsSort">
+                    <div class="technicalNSpareParts__brandsSort__title">Выберите желаемый бренд</div>
+                    <div class="technicalNSpareParts__brandsSort__block">          
+                        <a href="#kv" id="linkSort1" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/kverneland.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </a>
+                        <a href="" id="linkSort2" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/liliani.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </a>
+                        <a href="" id="linkSort3" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/samasz.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </a>
+                        <a href="" id="linkSort4" class="technicalNSpareParts__brandsSort__links">
+                            <img src="img/rainfine.png" alt="" class="technicalNSpareParts__brandsSort__img">
+                        </a>
+                    </div>
+                </div>            
+            </div>
+        </section>
+        <section id="kv" class="kverneland">
+            <div class="kverneland__block">
+                <div class="container">
+                    <img src="img/kverneland.png" alt="" class="kverneland__img">
+                </div>
+            </div>    
+            <div class="container">
+                <div class="sortPanel">
+                    <button class="sortPanel__btn">все</button>
+                    <button class="sortPanel__btn">плуги</button>
+                    <button class="sortPanel__btn">Разбрасыватели</button>
+                    <button class="sortPanel__btn">ПОЧВООБРАБОТКА</button>
+                    <button class="sortPanel__btn">МУЛЬЧИРОВЩИКИ</button>
+                    <button class="sortPanel__btn">CЕЯЛКИ</button>
+                    <button class="sortPanel__btn">ОПРЫСКИВАТЕЛИ</button>
+                    <button class="sortPanel__btn">КОРМОЗАГОТОВКА</button>
+                    <button class="sortPanel__btn">ПРЕСС-ПОДБОРЩИКИ</button>
+                    <button class="sortPanel__btn">ТЕХНИКА ДЛЯ КОРМЛЕНИЯ</button>
+                </div>
+            </div>  
+        </section>
+        <section class="plows tnSP">
+            <div class="container">
+                <div class="titles">ПЛУГИ</div>
+                <div class="subTitles">Навесные оборотные плуги</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card1.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland 150 S Variomat</div>
+                                <div class="card__body__descr">Для легких и средних почв,<br>каменистые условия.<span>3 - 5 Корпусов</span> 
+                                </div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card2.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland ED - LD</div>
+                                <div class="card__body__descr">Повышенная прочность. <span>2 - 6 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card3.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland 150 S</div>
+                                <div class="card__body__descr">Идеальный выбор <br> для каменистых почв. <span>3 - 4 корпуса</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card4.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland 150 B</div>
+                                <div class="card__body__descr">Идеальный выбор для легких и <br> средних почв без камней. <span>3 - 4 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card5.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland ED - LD</div>
+                                <div class="card__body__descr">Повышенная прочность. <span>2 - 6 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="" class="card__link">
+                                <img src="img/cards/card6.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland LO</div>
+                                <div class="card__body__descr">Высокопроизводительный плуг <br> для выполнения работ "по полю" и <br> "в борозде". <span>4 - 7 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card7.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland 2500 i-Plough</div>
+                                <div class="card__body__descr">Плуги, совместимые с ISOBUS, <br>
+                                    для любых условий, доступна <br> система выравнивания <br>
+                                    корпусов FURROWсontrol. <span>4 - 6 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="revPlows">
+            <div class="container">
+                <div class="subTitles">Полунавесные оборотные плуги</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card8.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland PN - RN</div>
+                                <div class="card__body__descr">Экономически выгодный, легкий в <br> настройке и обслуживании,работа <br>
+                                    «В борозде» (In-Furrow) и «Вне <br> борозды» (On-Land).<span>3 - 4 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card9.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland 2500 i-Plough</div>
+                                <div class="card__body__descr">Плуги, совместимые с ISOBUS, <br>
+                                    для любых условий, доступна <br> система выравнивания <br>
+                                    корпусов FURROWсontrol. <span>4 - 6 Корпусов</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Packers">
+            <div class="container">
+                <div class="subTitles">Почвоуплотнители</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card10.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">ОДНОРЯДНЫЙ ПРИЦЕПНОЙ <br>ПОЧВОУПЛОТНИТЕЛЬ</div>
+                                <div class="card__body__descr">Усиленная подготовка почвы.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card11.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">ПРИЦЕПНОЙ ДВУХРЯДНЫЙ <br>ПОЧВОУПЛОТНИТЕЛЬ</div>
+                                <div class="card__body__descr">От очень рыхлых до тяжелых почв.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card12.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">ПОЧВОУПЛОТНИТЕЛЬ-<br>КОМКОДРОБИТЕЛЬ</div>
+                                <div class="card__body__descr">Дополнительный каток-<br>комкодробитель для дробления<br>комков земли.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card13.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">ФРОНТАЛЬНЫЙ<br>ПОЧВОУПЛОТНИТЕЛЬ</div>
+                                <div class="card__body__descr">Идеально подходит для<br>комбинаций орудий.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card14.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">КРЕПЛЕНИЕ КАТКА KVERNELAND</div>
+                                <div class="card__body__descr">Прочный и надежный.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="packers tnSP">
+            <div class="container">
+                <div class="titles">Почвоуплотнители</div>
+                <div class="subTitles">Дисковые разбрасыватели</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card15.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta EL</div>
+                                <div class="card__body__descr">Exacta EL - это небольшой и очень <br> компактный разбрасыватель.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card16.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta CL</div>
+                                <div class="card__body__descr">Дисковый разбрасыватель Exacta CL <br> – мастер в сегменте разбрасывателей <br> средней производительности.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card17.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta CL EW</div>
+                                <div class="card__body__descr">Легкий способ внесения удобрений с <br> помощью дискового разбрасывателя <br> Exacta CL EW.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card18.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta <br> CL GEOSPREAD</div>
+                                <div class="card__body__descr">Разбрасыватель <br>Exacta CL GEOSPREAD с системой <br> GPS, - умное разбрасывание <br> (секции минимум 1 метр).</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card19.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta HL</div>
+                                <div class="card__body__descr">Exacta HL <br> - это высокопроизводительный <br> дисковый разбрасыватель. <span> Идеально подходит для высокой <br> продуктивности и точной работы.</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card20.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta TL</div>
+                                <div class="card__body__descr">Kverneland Exacta TL - это <br> лучший в своем классе дисковый <br> разбрасыватель удобрений для <br> оптимального удобрения культур <br> в самых сложных условиях. </div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card21.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta <br> TL GEOSPREAD</div>
+                                <div class="card__body__descr">Разбрасыватель <br> Exacta TL GEOSPREAD с системой <br> GPS, - умное разбрасывание <br> (секции минимум 1 метр).</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card22.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Exacta <br> TLX GEOSPREAD</div>
+                                <div class="card__body__descr">Высокая скорость разбрасывания.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="tillage tnSP">
+            <div class="container">
+                <div class="titles">Почвообработка</div>
+                <div class="subTitles">Предпосевные культиваторы</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card23.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND ACCESS+</div>
+                                <div class="card__body__descr">Культиватор с рабочей шириной от <br> 3.00 до 4.00м для комбинации с <br> сеялками Kverneland.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card24.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND TLD - <br> ВИБРО-КУЛЬТИВАТОР</div>
+                                <div class="card__body__descr">Идеальное распределение  веса, <br> точное соблюдение глубины <br> обработки и отличная возможность <br> копирования рельефа почвы для <br> формирования оптимального семенного <br> ложа на всех типах почвы.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card25.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND TLG</div>
+                                <div class="card__body__descr">Оптимальная предпосевная <br> обработка почвы для посева сахарной <br> свеклы, картофеля и овощей.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+        </section>
+        <section class="stubbleCultivators ">
+            <div class="container">
+                <div class="subTitles">Стерневые культиваторы</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card26.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND ENDURO / <br> ENDURO PRO</div>
+                                <div class="card__body__descr">Стерневая обработка: <br> заделка, выравнивание и <br> уплотнение за один проход.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card27.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND TURBO</div>
+                                <div class="card__body__descr">Культивация и предпосевная подготовка. <span>Всесезонный.</span></div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card28.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">Kverneland Turbo T i-Tiller</div>
+                                <div class="card__body__descr">Умный культиватор.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card29.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">КУЛЬТИВАТОР KVERNELAND CTC</div>
+                                <div class="card__body__descr">Стерневой культиватор с <br> универсальным оборудованием. 3 <br> варианта расстояния между стойками, <br> 2 вида стоек, 8 типов сошников, <br> ширина захвата 4.0, 5.0 и 6.0 м.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card30.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND A-DRILL</div>
+                                <div class="card__body__descr">Пневматическая сеялка, встроенная в <br> стерневые культиваторы или короткие <br> дисковые бороны для эффективного <br> внесения сидеральных культур во <br> время обработки стерни.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card31.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND KNOCK-ON</div>
+                                <div class="card__body__descr">Быстрая и легкая смена деталей.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subsoilers">
+            <div class="container">
+                <div class="subTitles">Глубокорыхлители</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card32.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVEГЛУБОКОРЫХЛИТЕЛЬ <br> KVERNELAND CLG-II</div>
+                                <div class="card__body__descr">Для глубокого рыхления почвы и <br> исключения уплотнения.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card33.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">ГЛУБОКОРЫХЛИТЕЛЬ <br> KVERNELAND CLI</div>
+                                <div class="card__body__descr">Специальная конструкция <br> глубокорыхлителя Kverneland CLI.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card34.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND FLATLINER</div>
+                                <div class="card__body__descr">Рыхление подпочвы и борьба с <br> уплотнением грунта на глубине <br> от 30 см до 50 см.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <a href="#" class="card__link">
+                                <img src="img/cards/card35.jpg" alt="" class="card__link__img">
+                            </a> 
+                            <div class="card__body">
+                                <div class="card__body__title">KVERNELAND DTX</div>
+                                <div class="card__body__descr">Подготовка поля за один проход - <br> выгодно и экономически эффективно.</div>
+                                <button class="card__body__btn openModalWindow">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>          
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="img/Logo.png" alt="" class="footer__logo__img">
+            </div>           
+            <div class="footer__email">Администратор — <span>Mchernienko@Stavagro.com</span></div>
+            <hr class="footer__email__hr">
+            <div class="footer__phone">
+                <a href="tel:+79624021236"">+7 (962) 402—12—36</a>
+            </div>          
+            <hr class="footer__phone__hr">
+            <div class="footer__inn">инн: <span>2634109033</span></div>
+        </div>        
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
