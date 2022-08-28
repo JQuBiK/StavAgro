@@ -3,17 +3,25 @@
 require 'vendor/autoload.php';
 require 'Mailer.php';
 
-echo "< pre>";
-print_r($_POST);
-echo "< /pre>";
-//$subject = $_POST['subject'];
-//$mail = $_POST['mail'];
-//$phone = $_POST['phone'];
+try {
+$subjectTech = $_POST['technical'];
+$subjectServ = $_POST['service'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
 
-//$mailer = new Mailer();
+$subject = "Без темы";
 
-//dump($mailer);
+if ($subjectTech == "true") {
+	$subject = "Техника";
+} elseif ($subjectServ == "true") {
+	$subject = "Сервис";
+}
 
-//dump($mailer->sendMail(Config::$baseMail, $subject, $mail, $phone));
+$mailer = new Mailer();
 
+$mailer->sendMail(Config::$baseMail, $subject, $name, $email, $phone);
+} catch (Exception $e) {
+	echo $e;
+}
 ?>

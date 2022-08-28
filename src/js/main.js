@@ -10,7 +10,6 @@ let btnLinkSort2 = document.getElementById('linkSort2');
 let btnLinkSort3 = document.getElementById('linkSort3');
 let btnLinkSort4 = document.getElementById('linkSort4');
 
-
 openModalbtns.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
@@ -31,15 +30,24 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// btnCheckTechnical.addEventListener('click', () => {
-//     btnCheckTechnical.classList.toggle('active');
-//     btnCheckService.classList.remove('active');
-// });
-// btnCheckService.addEventListener('click', () => {
-//     btnCheckService.classList.toggle('active');
-//     btnCheckTechnical.classList.remove('active');
-// });
+$('#btnSend').click(function(){
+	$.post(
+		'php/calc.php',
 
+		{
+			technical: document.getElementById("technical").checked,
+			service: document.getElementById("service").checked,
+			name: document.forms["formSend"]["name"].value,
+			phone: document.forms["formSend"]["phone"].value,
+			email: document.forms["formSend"]["email"].value
+		},
+
+		function(msg){
+			console.log(msg);
+		}
+	);
+	return false;
+});
 
 
 btnLinkSort1.addEventListener('click', () => {
