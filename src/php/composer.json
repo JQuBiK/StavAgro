@@ -1,0 +1,19 @@
+{
+    "name": "dmitri/html",
+    "autoload": {
+        "psr-4": {
+            "Dmitri\\Html\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitrii"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.4"
+    }
+}
