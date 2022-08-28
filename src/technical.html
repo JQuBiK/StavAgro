@@ -46,13 +46,14 @@
         <div class="modalWindowBg">
             <div class="modalWindow">
                 <div class="modalWindow__tilte">Выберите тип услуги</div>
-                <button class="modalWindow__closeBtn"></button>
-                <div class="modalWindow__checkBlock">
-                    <!-- <button class="modalWindow__check__technical">Техника</button>
-                    <button class="modalWindow__check__service">Сервис</button>  -->
-                </div>                                        
+                <button class="modalWindow__closeBtn"></button>                                    
                 <form class="modalWindow__form" action="">
-                    <input type="checkbox" name="checkTech" class="modalWindow__check__technical">
+                    <div class="modalWindow__checkBlock">
+                        <input class="modalWindow__check__technical" type="radio" id="technical" name="service">
+                        <label for="technical" class="modalWindow__check__lable__technical">Техника</label>
+                        <input class="modalWindow__check__technical" type="radio" id="service" name="service">
+                        <label for="service" class="modalWindow__check__lable__service">Сервис</label>
+                    </div>    
                     <input type="text" placeholder="Имя">
                     <input type="tel" placeholder="Телефон">
                     <input type="email" placeholder="Почта">
