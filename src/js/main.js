@@ -31,17 +31,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// btnCheckTechnical.addEventListener('click', () => {
-//     btnCheckTechnical.classList.toggle('active');
-//     btnCheckService.classList.remove('active');
-// });
-// btnCheckService.addEventListener('click', () => {
-//     btnCheckService.classList.toggle('active');
-//     btnCheckTechnical.classList.remove('active');
-// });
-
-
-
 btnLinkSort1.addEventListener('click', () => {
     btnLinkSort1.classList.toggle('active');
     btnLinkSort2.classList.remove('active');
