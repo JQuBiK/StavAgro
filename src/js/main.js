@@ -55,3 +55,11 @@ btnLinkSort4.addEventListener('click', () => {
     btnLinkSort2.classList.remove('active');
     btnLinkSort3.classList.remove('active');
 });
+
+$(document).ready(function(){
+	$('.cardHidden__more').click(function(){
+		$('.cardHidden__body__descr').toggleClass('hide', 1000);	
+		$('.cardHidden__more').toggleClass('active', 1000);		
+		return false;
+	});				
+});
