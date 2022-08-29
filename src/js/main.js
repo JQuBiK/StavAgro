@@ -57,9 +57,51 @@ btnLinkSort4.addEventListener('click', () => {
 });
 
 $(document).ready(function(){
-	$('.cardHidden__more').click(function(){
-		$('.cardHidden__body__descr').toggleClass('hide', 1000);	
-		$('.cardHidden__more').toggleClass('active', 1000);		
+	$('#lilianimore1').click(function(){
+		$('#lilianicard1').toggleClass('hide', 1000);	
+		$('#lilianimore1').toggleClass('active', 1000);		
+		return false;
+	});				
+});
+$(document).ready(function(){
+	$('#lilianimore2').click(function(){
+		$('#lilianicard2').toggleClass('hide', 1000);	
+		$('#lilianimore2').toggleClass('active', 1000);		
+		return false;
+	});				
+});
+$(document).ready(function(){
+	$('#lilianimore3').click(function(){
+		$('#lilianicard3').toggleClass('hide', 1000);	
+		$('#lilianimore3').toggleClass('active', 1000);		
+		return false;
+	});				
+});
+$(document).ready(function(){
+	$('#rainfinemore1').click(function(){
+		$('#rainfinecard1').toggleClass('hide', 1000);	
+		$('#rainfinemore1').toggleClass('active', 1000);		
+		return false;
+	});				
+});
+$(document).ready(function(){
+	$('#rainfinemore2').click(function(){
+		$('#rainfinecard2').toggleClass('hide', 1000);	
+		$('#rainfinemore2').toggleClass('active', 1000);		
+		return false;
+	});				
+});
+$(document).ready(function(){
+	$('#rainfinemore3').click(function(){
+		$('#rainfinecard3').toggleClass('hide', 1000);	
+		$('#rainfinemore3').toggleClass('active', 1000);		
+		return false;
+	});				
+});
+$(document).ready(function(){
+	$('#samaszmore').click(function(){
+		$('#samaszcard').toggleClass('hide', 1000);	
+		$('#samaszmore').toggleClass('active', 1000);		
 		return false;
 	});				
 });

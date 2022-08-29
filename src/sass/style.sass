@@ -694,6 +694,10 @@ main
             font-size: 18px
             line-height: 22px
             color: #000000
+        &__subTitle
+            display: block
+            margin-top: 10px
+            font-weight: bold
         &__descr
             display: block
             margin-top: 10px
@@ -705,8 +709,7 @@ main
             position: relative
             transition: .3s all
         &__descr span
-            display: block
-            margin-top: 10px
+            font-weight: bold
         &__descr.hide
             height: 180px
             overflow: hidden
@@ -790,6 +793,89 @@ main
     &__body
         width: 350px 
         height: 220px
+        background: #FFFFFF
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16)
+        border-radius: 0px 0px 10px 10px
+        padding: 10px 0 10px 10px
+        position: relative
+        &__title
+            font-style: normal
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+            color: #000000
+        &__descr
+            display: block
+            margin-top: 10px
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 20px
+            color: #000000
+        &__descr span
+            display: block
+            margin-top: 10px
+        &__btn
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translateX(-50%)
+            width: 160px
+            height: 40px
+            background: #007737
+            border: 1px solid #007737
+            border-radius: 5px
+            color: #fff
+            font-style: normal
+            font-weight: 700
+            font-size: 18px
+            line-height: 22px
+            text-align: center
+            text-transform: uppercase
+            cursor: pointer
+.cardSamaz
+    margin-top: 60px
+    display: block
+    &__link   
+        display: block
+        position: relative
+        width: 350px
+        height: 350px
+        &:hover
+            &::before
+                height: 100%
+            &::after
+                transition: .3s all
+                transform: translate(-50%, -50%) scale(1)
+        &::before
+                content: ''
+                display: block
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 0
+                background: rgba(255, 255, 255, 0.05)
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 60px rgba(0, 0, 0, 0.25)
+                backdrop-filter: blur(60px)
+                border-radius: 10px 10px 0px 0px
+                transition: .3s all
+        &::after
+            content: 'Подробнее...'
+            display: block
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%) scale(0)
+            position: absolute
+            font-style: normal
+            font-weight: 400
+            font-size: 24px
+            line-height: 140%
+            color: #FFFFFF
+            transition: .3s all
+    &__body
+        width: 350px
+        height: 337px
         background: #FFFFFF
         box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16)
         border-radius: 0px 0px 10px 10px
