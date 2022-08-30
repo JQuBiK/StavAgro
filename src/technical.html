@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container">
             <div class="subheader">
                 <div class="subheader__descr">Nchernienko@stavagro.сom</div>
                 <a href="tel:+79624021236" class="subheader__descr">+7 (962) 402—12—36</a>
-                <a href="#" class="subheader__descr">Официальный дилер Kverneland<span></span></a>
+                <a href="https://ru.kvernelandgroup.com/" class="subheader__descr">Официальный дилер Kverneland<span></span></a>
             </div>
         </div>
     </header>
@@ -30,10 +30,10 @@
                 </div>
                 <div class="col-md-7">
                     <div class="navigation__list">
-                        <a href="" class="navigation__link">Главная</a>
-                        <a href="" class="navigation__link">Техника</a>
-                        <a href="" class="navigation__link">Сервис</a>
-                        <a href="" class="navigation__link">О нас</a>
+                        <a href="index.html" class="navigation__link">Главная</a>
+                        <a href="index.html#mechanism" class="navigation__link">Техника</a>
+                        <a href="index.html#servic" class="navigation__link">Сервис</a>
+                        <a href="index.html#about" class="navigation__link">О нас</a>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -42,7 +42,9 @@
             </div>
         </div>           
     </nav>
-    <main>                                             <!-- Модальное окно -->
+    <main>                     
+        <a href="#header" class="scrolltotop hiddenscroll"></a>
+        <!-- Модальное окно -->
         <div class="modalWindowBg">
             <div class="modalWindow">
                 <div class="modalWindow__tilte">Выберите тип услуги</div>
@@ -67,7 +69,7 @@
         <div class="container">
             <a href="index.html" class="backToMainPage">Вернуться на главную страницу</a>
         </div>        
-        <section class="technicalNSpareParts">
+        <section id="technicalNSpareParts" class="technicalNSpareParts">
             <div class="container">
                 <div class="technicalNSpareParts__title">техника и запасные части</div>
                 <div class="technicalNSpareParts__brandsSort">
@@ -96,21 +98,31 @@
                 </div>
             </div>    
             <div class="container">
-                <div class="sortPanel">
-                    <button class="sortPanel__btn">все</button>
-                    <button class="sortPanel__btn">плуги</button>
-                    <button class="sortPanel__btn">Разбрасыватели</button>
-                    <button class="sortPanel__btn">ПОЧВООБРАБОТКА</button>
-                    <button class="sortPanel__btn">МУЛЬЧИРОВЩИКИ</button>
-                    <button class="sortPanel__btn">CЕЯЛКИ</button>
-                    <button class="sortPanel__btn">ОПРЫСКИВАТЕЛИ</button>
-                    <button class="sortPanel__btn">КОРМОЗАГОТОВКА</button>
-                    <button class="sortPanel__btn">ПРЕСС-ПОДБОРЩИКИ</button>
-                    <button class="sortPanel__btn">ТЕХНИКА ДЛЯ КОРМЛЕНИЯ</button>
+                <div class="row">
+                    <div class="sortPanel">
+                        <div class="col-md-12">
+                            <div class="sortPanel__up">
+                                <button data-f="all" class="sortPanel__btn active">все</button>
+                                <button data-f="1" class="sortPanel__btn">плуги</button>
+                                <button data-f="2" class="sortPanel__btn">Разбрасыватели</button>
+                                <button data-f="3" class="sortPanel__btn">ПОЧВООБРАБОТКА</button>
+                                <button data-f="4" class="sortPanel__btn">МУЛЬЧИРОВЩИКИ</button>
+                                <button data-f="5" class="sortPanel__btn">CЕЯЛКИ</button>
+                            </div> 
+                        </div>
+                        <div class="col-md-12">
+                            <div class="sortPanel__down">
+                                <button data-f="6" class="sortPanel__btn">ОПРЫСКИВАТЕЛИ</button>
+                                <button data-f="7" class="sortPanel__btn">КОРМОЗАГОТОВКА</button>
+                                <button data-f="8" class="sortPanel__btn">ПРЕСС-ПОДБОРЩИКИ</button>
+                                <button data-f="9" class="sortPanel__btn">ТЕХНИКА ДЛЯ КОРМЛЕНИЯ</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>  
         </section>
-        <section class="plows tnSP">
+        <section class="plows tnSP 1 filersec">
             <div class="container">
                 <div class="titles">ПЛУГИ</div>
                 <div class="subTitles">Навесные оборотные плуги</div>
@@ -205,7 +217,7 @@
                 </div>
             </div>
         </section>
-        <section class="revPlows">
+        <section class="revPlows 1 filersec">
             <div class="container">
                 <div class="subTitles">Полунавесные оборотные плуги</div>
                 <div class="row">
@@ -239,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section class="Packers">
+        <section class="Packers 1 filersec">
             <div class="container">
                 <div class="subTitles">Почвоуплотнители</div>
                 <div class="row">
@@ -306,9 +318,9 @@
                 </div>
             </div>
         </section>
-        <section class="packers tnSP">
+        <section class="packers tnSP 2 filersec">
             <div class="container">
-                <div class="titles">Почвоуплотнители</div>
+                <div class="titles">Разбрасыватели</div>
                 <div class="subTitles">Дисковые разбрасыватели</div>
                 <div class="row">
                     <div class="col-md-4">
@@ -411,7 +423,7 @@
                 </div>
             </div>
         </section>
-        <section class="tillage tnSP">
+        <section class="tillage tnSP 3 filersec">
             <div class="container">
                 <div class="titles">Почвообработка</div>
                 <div class="subTitles">Предпосевные культиваторы</div>
@@ -455,7 +467,7 @@
                 </div>
             </div>          
         </section>
-        <section class="stubbleCultivators">
+        <section class="stubbleCultivators 3 filersec">
             <div class="container">
                 <div class="subTitles">Стерневые культиваторы</div>
                 <div class="row">
@@ -534,7 +546,7 @@
                 </div>
             </div>
         </section>
-        <section class="subsoilers">
+        <section class="subsoilers 3 filersec">
             <div class="container">
                 <div class="subTitles">Глубокорыхлители</div>
                 <div class="row">
@@ -589,7 +601,7 @@
                 </div>
             </div>
         </section>
-        <section class="STRIPTILL">
+        <section class="STRIPTILL 3 filersec">
             <div class="container">
                 <div class="subTitles">Технология STRIP TILL</div>
                 <div class="row">
@@ -608,7 +620,7 @@
                 </div>    
             </div>
         </section>
-        <section class="discHarrows">
+        <section class="discHarrows 3 filersec">
             <div class="container">
                 <div class="subTitles">Дисковые бороны</div>
                 <div class="row">
@@ -639,7 +651,7 @@
                 </div>
             </div>
         </section>
-        <section class="powerHarrows">
+        <section class="powerHarrows 3 filersec">
             <div class="container">
                 <div class="subTitles">Активные бороны</div>
                 <div class="row">
@@ -682,7 +694,7 @@
                 </div>
             </div>
         </section>
-        <section class="rollers">
+        <section class="rollers 3 filersec">
             <div class="container">
                 <div class="subTitles">Катки</div>
                 <div class="row">
@@ -701,7 +713,7 @@
                 </div>
             </div>
         </section>
-        <section class="showers tnSP">
+        <section class="showers tnSP 4 filersec">
             <div class="container">
                 <div class="titles">МУЛЬЧИРОВЩИКИ</div>
                 <div class="subTitles"></div>
@@ -841,7 +853,7 @@
                 </div>
             </div>
         </section>
-        <section class="seeders tnSP">
+        <section class="seeders tnSP 5 filersec">
             <div class="container">
                 <div class="titles">CЕЯЛКИ</div>
                 <div class="subTitles">Пневматические зерновые сеялки</div>
@@ -921,7 +933,7 @@
                 </div>
             </div>
         </section>
-        <section class="mechanicalPrecisionSeedDrills">
+        <section class="mechanicalPrecisionSeedDrills 5 filersec">
             <div class="container">
                 <div class="subTitles">Механические сеялки точного высева</div>
                 <div class="row">
@@ -940,7 +952,7 @@
                 </div>
             </div>
         </section>
-        <section class="pneumaticPrecisionSeedDrills">
+        <section class="pneumaticPrecisionSeedDrills 5 filersec">
             <div class="container">
                 <div class="subTitles">Пневматические сеялки точного высева</div>
                 <div class="row">
@@ -1043,7 +1055,7 @@
                 </div>
             </div>
         </section>
-        <section class="integratedSeedingCombinations">
+        <section class="integratedSeedingCombinations 5 filersec">
             <div class="container">
                 <div class="subTitles">Интегрированные посевные комбинации</div>
                 <div class="row">
@@ -1086,7 +1098,7 @@
                 </div>
             </div>
         </section>
-        <section class="vegetablePrecisionPlanters">
+        <section class="vegetablePrecisionPlanters 5 filersec">
             <div class="container">
                 <div class="subTitles">Овощные сеялки точного высева</div>
                 <div class="row">
@@ -1105,7 +1117,7 @@
                 </div>
             </div>
         </section>
-        <section class="sprayers tnSP">
+        <section class="sprayers tnSP 6 filersec">
             <div class="container">
                 <div class="titles">ОПРЫСКИВАТЕЛИ</div>
                 <div class="subTitles">Навесные фронтальные опрыскиватели</div>
@@ -1137,7 +1149,7 @@
                 </div>
             </div>
         </section>
-        <section class="mountedSprayers">
+        <section class="mountedSprayers 6 filersec">
             <div class="container">
                 <div class="subTitles">Навесные опрыскиватели</div>
                 <div class="row">
@@ -1168,7 +1180,7 @@
                 </div>
             </div>
         </section>
-        <section class="trailedSprayers">
+        <section class="trailedSprayers 6 filersec">
             <div class="container">
                 <div class="subTitles">Прицепные опрыскиватели</div>
                 <div class="row">
@@ -1211,7 +1223,7 @@
                 </div>
             </div>
         </section>
-        <section class="selfPropelledSprayers">
+        <section class="selfPropelledSprayers 6 filersec">
             <div class="container">
                 <div class="subTitles">Самоходные опрыскиватели</div>
                 <div class="row">
@@ -1228,7 +1240,7 @@
                 </div>
             </div>
         </section>
-        <section class="forageProcessing tnSP">
+        <section class="forageProcessing tnSP 7 filersec">
             <div class="container">
                 <div class="titles">КОРМОЗАГОТОВКА</div>
                 <div class="subTitles">Однороторные, двухроторные и четырехроторные валкообразователи</div>
@@ -1368,7 +1380,7 @@
                 </div>
             </div>
         </section>
-        <section class="simpleMowers">
+        <section class="simpleMowers 7 filersec">
             <div class="container">
                 <div class="subTitles">Простые косилки</div>
                 <div class="row">
@@ -1459,7 +1471,7 @@
                 </div>
             </div>
         </section>
-        <section class="airConditionedMowers">
+        <section class="airConditionedMowers 7 filersec">
             <div class="container">
                 <div class="subTitles">Косилки с кондиционером</div>
                 <div class="row">
@@ -1610,7 +1622,7 @@
                 </div>
             </div>
         </section>
-        <section class="mountedAndTrailedTedders">
+        <section class="mountedAndTrailedTedders 7 filersec">
             <div class="container">
                 <div class="subTitles">Навесные и прицепные ворошилки</div>
                 <div class="row">
@@ -1689,7 +1701,7 @@
                 </div>
             </div>
         </section>
-        <section class="balers tnSP">
+        <section class="balers tnSP 8 filersec">
             <div class="container">
                 <div class="titles">ПРЕСС-ПОДБОРЩИКИ</div>
                 <div class="subTitles">Пресс-подборщик с фиксированной камерой</div>
@@ -1733,7 +1745,7 @@
                 </div>
             </div>
         </section>
-        <section class="variableChamberBaler">
+        <section class="variableChamberBaler 8 filersec">
             <div class="container">
                 <div class="subTitles">Пресс-подборщик с изменяемой камерой</div>
                 <div class="row">
@@ -1764,7 +1776,7 @@
                 </div>
             </div>
         </section>
-        <section class="combinationOfFixedChamberBalerAndWrapper">
+        <section class="combinationOfFixedChamberBalerAndWrapper 8 filersec">
             <div class="container">
                 <div class="subTitles">Комбинация пресс-подборщика с фиксированной камерой и обмотчика</div>
                 <div class="row">
@@ -1795,7 +1807,7 @@
                 </div>
             </div>
         </section>
-        <section class="variableChamberBalerAndWrapperCombination">
+        <section class="variableChamberBalerAndWrapperCombination 8 filersec">
             <div class="container">
                 <div class="subTitles">Комбинация пресс-подборщика с изменяемой камерой и обмотчика</div>
                 <div class="row">
@@ -1814,7 +1826,7 @@
                 </div>
             </div>
         </section>
-        <section class="wrappers">
+        <section class="wrappers 8 filersec">
             <div class="container">
                 <div class="subTitles">Обмотчики</div>
                 <div class="row">
@@ -1881,7 +1893,7 @@
                 </div>
             </div>
         </section>
-        <section class="feedingEquipment tnSP">
+        <section class="feedingEquipment tnSP 9 filersec">
             <div class="container">
                 <div class="titles">ТЕХНИКА ДЛЯ КОРМЛЕНИЯ</div>
                 <div class="subTitles">Измельчители тюков и кормораздатчики</div>

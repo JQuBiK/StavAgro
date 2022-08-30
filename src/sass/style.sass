@@ -569,14 +569,21 @@ main
         margin: 0 auto
         width: 349px
         height: 84px 
+.filterHide
+    display: none       
 .sortPanel
-    display: flex
-    margin-top: 30px
-    align-items: center
-    flex-direction: row
-    flex-wrap: wrap   
-    justify-content: center
-    width: 100%
+    &__up
+        display: flex
+        margin-top: 60px
+        align-items: center 
+        justify-content: center
+        width: 100%
+    &__down
+        display: flex
+        margin-top: 30px
+        align-items: center 
+        justify-content: center
+        width: 100%
     &__btn
         display: flex
         font-weight: 700
@@ -587,14 +594,15 @@ main
         border-right: 1px solid #000 
         padding: 0 30px 0 30px
         outline: none
-        margin-top: 30px
         background-color: #FFF6EA
         text-transform: uppercase
         cursor: pointer
         &:active, &:focus
             outline: none
-        &:nth-child(6), &:nth-child(10)
+        &:last-child
             border: none
+    &__btn.active
+        color: #007737
 .titles       
     font-style: normal
     font-weight: 900
@@ -920,3 +928,35 @@ main
             text-align: center
             text-transform: uppercase
             cursor: pointer
+.scrolltotop
+    display: block
+    position: fixed
+    width: 60px
+    height: 60px
+    background: rgba(28, 28, 28, 0.8)
+    right: 50px
+    bottom: 100px
+    z-index: 101
+    border-radius: 50%
+    opacity: 1
+    transition: .3s all
+    &::before, &::after
+        content: ''
+        display: block
+        position: absolute
+        width: 17px
+        height: 1px
+        background-color: #fff
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+    &::before
+        left: 16px
+        rotate: -45deg
+    &::after
+        left: 28px
+        rotate: 45deg
+
+.scrolltotop.hiddenscroll
+    opacity: 0
+    transition: .3s all

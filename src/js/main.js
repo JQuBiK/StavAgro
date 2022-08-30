@@ -9,7 +9,7 @@ let btnLinkSort1 = document.getElementById('linkSort1');
 let btnLinkSort2 = document.getElementById('linkSort2');
 let btnLinkSort3 = document.getElementById('linkSort3');
 let btnLinkSort4 = document.getElementById('linkSort4');
-
+const filter = document.querySelectorAll('.filersec');
 
 openModalbtns.forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -30,6 +30,25 @@ document.addEventListener('click', (e) => {
         modalWindow.classList.remove('active');
     }
 });
+
+$('a[href^="#"').on('click', function() {
+    let href = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
+});
+
+let btn = document.querySelector('.scrolltotop')
+function magic() {
+  if (window.pageYOffset > 1800) {
+  btn.classList.remove('hiddenscroll')
+  } else { btn.classList.add('hiddenscroll') }
+}
+btn.onclick = function () {
+	window.scrollTo(0,0)
+}
+window.onscroll = magic;
 
 btnLinkSort1.addEventListener('click', () => {
     btnLinkSort1.classList.toggle('active');
@@ -105,3 +124,20 @@ $(document).ready(function(){
 		return false;
 	});				
 });
+
+document.querySelector('.sortPanel').addEventListener('click', event =>{
+	if (event.target.tagName !== 'BUTTON') return false;
+
+	let filterClass = event.target.dataset['f'];
+
+
+	filter.forEach(elem => {
+		elem.classList.remove('filterHide');
+		if (!elem.classList.contains(filterClass) && filterClass !== 'all') {
+			elem.classList.add('filterHide');
+		}
+	});
+});
+
+
+
