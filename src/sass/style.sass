@@ -6,7 +6,8 @@
 header
     height: 50px
     background: rgba(28, 28, 28, 0.9);
-
+.mobile
+    display: none
 .subheader
     display: flex
     justify-content: space-between
@@ -434,6 +435,7 @@ main
         width: 351px
         height: 55px
         background: #007737
+        border: none
         border-radius: 10px
         display: block
         margin: 60px auto 0 auto
@@ -445,7 +447,9 @@ main
         text-transform: uppercase
         color: #FFFFFF
         cursor: pointer
-
+        &:active, &:focus
+            outline: none
+            border: none
 .backToMainPage
     display: block
     margin-top: 50px
@@ -547,15 +551,11 @@ main
         display: block
         padding: 16px 0 16px 0
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
-    &__text
+    &__img
         display: block
         margin: 0 auto
-        text-align: center
-        font-style: normal
-        font-weight: 700
-        font-size: 68px
-        line-height: 140%
-        color: #000000
+        width: 350px
+        height: 84px
 .samasz
     padding: 60px 0 130px 0
     &__block
@@ -567,7 +567,7 @@ main
     &__img
         display: block
         margin: 0 auto
-        width: 349px
+        width: 350px
         height: 84px 
 .filterHide
     display: none       
@@ -960,3 +960,481 @@ main
 .scrolltotop.hiddenscroll
     opacity: 0
     transition: .3s all
+
+@media screen and (max-width: 992px)
+    .navigation
+        &__btn
+            width: 210px
+            height: 55px
+    .mechanism
+        &__img
+            width: 100%
+            height: 100%
+            transition: .3s all
+            display: block
+            margin: 0 auto
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
+            border-radius: 10px
+            &:hover
+                transition: .3s all
+                width: 103%
+                height: 103%
+    .backToMainPage
+        margin: 40px 0 0 45px
+        &:hover
+            color: #000
+            text-decoration: none
+        &::after
+            content: ''
+            display: block
+            width: 24px
+            height: 17px
+            position: absolute
+            background: url('../icons/arrow.png')center center/cover no-repeat
+            top: 3px
+            left: -45px 
+    .technicalNSpareParts
+        padding: 55px 0 60px 0  
+        &__brandsSort
+            &__links
+                display: flex
+                border: 1px solid #000000
+                width: 210px
+                height: 70px
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                background-color: #FFF6EA
+                &:active
+                    outline: none 
+                &:focus
+                    outline: none 
+            &__img
+                display: flex
+                width: 80%
+                &:first-child
+                    width: 90%
+            &__links.active
+                background-color: #fff
+                display: flex
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25)
+    .sortPanel
+        &__up
+            display: flex
+            margin-top: 60px
+            align-items: center 
+            justify-content: center
+            width: 100%
+        &__down
+            display: flex
+            margin-top: 30px
+            align-items: center 
+            justify-content: center
+            width: 100%
+        &__btn
+            display: flex
+            font-weight: 700
+            font-size: 16px
+            line-height: 22px
+            color: #000000
+            border: none
+            border-right: 1px solid #000 
+            padding: 0 18px
+            outline: none
+            background-color: #FFF6EA
+            text-transform: uppercase
+            cursor: pointer
+            &:active, &:focus
+                outline: none
+            &:last-child
+                border: none
+        &__btn.active
+            color: #007737
+
+    .card
+        margin-top: 30px
+        display: block
+        &__link   
+            display: block
+            position: relative
+            width: 290px
+            height: 195px
+            &:hover
+                &::before
+                    opacity: 1
+                    transition: .3s all
+                &::after
+                    transition: .3s all
+                    transform: translate(-50%, -50%) scale(1)
+            &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: rgba(255, 255, 255, 0.05)
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 60px rgba(0, 0, 0, 0.25)
+                    backdrop-filter: blur(60px)
+                    border-radius: 10px 10px 0px 0px
+                    transition: .3s all
+                    opacity: 0
+            &::after
+                content: 'Подробнее...'
+                display: block
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%) scale(0)
+                position: absolute
+                font-style: normal
+                font-weight: 400
+                font-size: 24px
+                line-height: 140%
+                color: #FFFFFF
+                transition: .3s all
+            &__img
+                width: 100%
+        &__bodyB
+            width: 290px 
+            height: 290px
+            background: #FFFFFF
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16)
+            border-radius: 0px 0px 10px 10px
+            padding: 10px 0 10px 10px
+            position: relative
+        &__body
+            width: 290px 
+            height: 270px
+            background: #FFFFFF
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16)
+            border-radius: 0px 0px 10px 10px
+            padding: 10px 0 10px 10px
+            position: relative
+            &__title
+                font-style: normal
+                font-weight: 700
+                font-size: 16px
+                line-height: 22px
+                color: #000000
+            &__descr
+                display: block
+                margin-top: 10px
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: #000000
+            &__descr span
+                display: block
+                margin-top: 10px
+            &__btn
+                position: absolute
+                bottom: 10px
+                left: 50%
+                transform: translateX(-50%)
+                width: 160px
+                height: 40px
+                background: #007737
+                border: 1px solid #007737
+                border-radius: 5px
+                color: #fff
+                font-style: normal
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                text-transform: uppercase
+                cursor: pointer
+    .cardHidden
+        &__link   
+            display: block
+            position: relative
+            width: 100%
+            height: 100%
+            &:hover
+                &::before
+                    opacity: 1
+                &::after
+                    transition: .3s all
+                    transform: translate(-50%, -50%) scale(1)
+            &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: rgba(255, 255, 255, 0.05)
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 60px rgba(0, 0, 0, 0.25)
+                    backdrop-filter: blur(60px)
+                    border-radius: 10px 10px 0px 0px
+                    transition: .3s all
+                    opacity: 0
+            &::after
+                content: 'Подробнее...'
+                display: block
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%) scale(0)
+                position: absolute
+                font-style: normal
+                font-weight: 400
+                font-size: 24px
+                line-height: 140%
+                color: #FFFFFF
+                transition: .3s all
+            &__img
+                width: 100%
+        &__more
+                display: block
+                width: 30px
+                height: 15px
+                position: relative
+                margin: 20px auto 0 auto
+                cursor: pointer
+                &::before, &::after
+                    content: ''
+                    display: block
+                    width: 1px
+                    height: 18px
+                    background-color: #000
+                    position: absolute
+                    transition: .3s all
+                &::before
+                    transform: rotate(-45deg)
+                    left: 8px
+                &::after  
+                    transform: rotate(45deg)
+                    right: 8px
+        &__more.active
+                &::before
+                    transition: .3s all
+                    transform: rotate(45deg)
+                &::after  
+                    transition: .3s all
+                    transform: rotate(-45deg)
+        &__body
+            width: 290px 
+            background: #FFFFFF
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16)
+            border-radius: 0px 0px 10px 10px
+            padding: 10px 0 80px 10px
+            position: relative
+            transition: .3s all
+            &__title
+                font-style: normal
+                font-weight: 700
+                font-size: 15px
+                line-height: 22px
+                color: #000000
+            &__subTitle
+                display: block
+                margin-top: 10px
+                font-weight: bold
+            &__descr
+                display: block
+                margin-top: 10px
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: #000000
+                position: relative
+                transition: .3s all
+            &__descr span
+                font-weight: bold
+            &__descr.hide
+                height: 180px
+                overflow: hidden
+                transition: .3s all
+                &::after
+                    transition: .3s all
+                    content: ""
+                    display: block
+                    height: 90px
+                    position: absolute
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+            &__btn
+                position: absolute
+                bottom: 10px
+                left: 50%
+                transform: translateX(-50%)
+                width: 160px
+                height: 40px
+                background: #007737
+                border: 1px solid #007737
+                border-radius: 5px
+                color: #fff
+                font-style: normal
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                text-transform: uppercase
+                cursor: pointer
+
+    .cardSamaz
+        margin-top: 60px
+        display: block
+        &__link   
+            display: block
+            position: relative
+            width: 290px
+            height: 290px
+            &:hover
+                &::before
+                    opacity: 1
+                &::after
+                    transition: .3s all
+                    transform: translate(-50%, -50%) scale(1)
+            &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: rgba(255, 255, 255, 0.05)
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 60px rgba(0, 0, 0, 0.25)
+                    backdrop-filter: blur(60px)
+                    border-radius: 10px 10px 0px 0px
+                    transition: .3s all
+                    opacity: 0
+            &::after
+                content: 'Подробнее...'
+                display: block
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%) scale(0)
+                position: absolute
+                font-style: normal
+                font-weight: 400
+                font-size: 24px
+                line-height: 140%
+                color: #FFFFFF
+                transition: .3s all
+            &__img
+                width: 100%
+        &__body
+            width: 290px
+            height: 337px
+            background: #FFFFFF
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16)
+            border-radius: 0px 0px 10px 10px
+            padding: 10px 0 10px 10px
+            position: relative
+            &__title
+                font-style: normal
+                font-weight: 700
+                font-size: 15px
+                line-height: 22px
+                color: #000000
+            &__descr
+                display: block
+                margin-top: 10px
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 20px
+                color: #000000
+            &__descr span
+                display: block
+                margin-top: 10px
+            &__btn
+                position: absolute
+                bottom: 10px
+                left: 50%
+                transform: translateX(-50%)
+                width: 160px
+                height: 40px
+                background: #007737
+                border: 1px solid #007737
+                border-radius: 5px
+                color: #fff
+                font-style: normal
+                font-weight: 700
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                text-transform: uppercase
+                cursor: pointer
+
+@media screen and (max-width: 428px)
+    header
+        display: none
+    .logo   
+        display: none
+    .navigation
+        display: flex
+        background: #FFF6EA
+        height: 100px
+        align-items: center
+        position: relative
+        &__list
+            display: none
+        &__btn
+            display: none
+    .mobile
+        display: block
+        width: 100%
+        &__logo
+            display: block
+            margin: 0 auto
+        &__burger
+            position: absolute
+            display: block
+            width: 24px
+            height: 17px
+            top: 50%
+            transform: translateY(-50%)
+            right: 15px
+            border: none
+            outline: none
+            background-color: #FFF6EA
+            &:focus, &:active
+                border: none
+                outline: none
+            &::before, &::after
+                content: ''
+                display: block
+                width: 100%
+                height: 1px
+                position: absolute
+                background-color: #000
+            &::before
+                top: 0
+            &::after
+                bottom: 0
+            span
+                display: block
+                position: absolute
+                background-color: #000
+                width: 100%
+                height: 1px
+                top: 50%
+                right: 0
+                transform: translateY(-50%)
+                opacity: 1
+        &__burger.active
+            &::before
+                top: 50%
+                rotate: 45deg
+                transform: translateY(-50%)
+            &::after
+                top: 50%
+                rotate: -45deg
+                transform: translateY(-50%)
+            span
+                opacity: 0
+        &__menu
+            width: 100%
+            height: 476px
+            background: #FFFFFF
+            border: 1px solid #000000
+            border-radius: 0px 0px 10px 10px

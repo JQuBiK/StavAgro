@@ -10,6 +10,7 @@ let btnLinkSort2 = document.getElementById('linkSort2');
 let btnLinkSort3 = document.getElementById('linkSort3');
 let btnLinkSort4 = document.getElementById('linkSort4');
 const filter = document.querySelectorAll('.filersec');
+let filterBtn = document.querySelectorAll('.sortPanel__btn');
 
 openModalbtns.forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -30,6 +31,11 @@ document.addEventListener('click', (e) => {
         modalWindow.classList.remove('active');
     }
 });
+
+jQuery(function($){
+	$(".phone").mask("+7 (999) 999 - 99 99");
+});
+
 
 $('a[href^="#"').on('click', function() {
     let href = $(this).attr('href');
@@ -129,7 +135,10 @@ document.querySelector('.sortPanel').addEventListener('click', event =>{
 	if (event.target.tagName !== 'BUTTON') return false;
 
 	let filterClass = event.target.dataset['f'];
+	let target = event.target;
 
+	filterBtn.forEach(sortItem => sortItem.classList.remove('active'));
+	target.classList.add('active');
 
 	filter.forEach(elem => {
 		elem.classList.remove('filterHide');
@@ -138,6 +147,7 @@ document.querySelector('.sortPanel').addEventListener('click', event =>{
 		}
 	});
 });
+
 
 
 
