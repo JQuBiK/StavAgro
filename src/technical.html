@@ -23,6 +23,26 @@
         </div>
     </header>
     <nav class="navigation">
+        <div class="mobile">
+            <img src="img/Logo.png" alt="logo" class="mobile__logo">
+            <button class="mobile__burger">
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile__menu">
+            <div class="mobile__list">
+                <ul>
+                    <li><a href="#header" class="mobile__link">Главная</a></li>
+                    <li><a href="#mechanism" class="mobile__link">Техника</a></li>
+                    <li><a href="#servic" class="mobile__link">Сервис</a></li>
+                    <li><a href="#about" class="mobile__link">О нас</a></li>
+                </ul>
+                <button class="mobile__btn openModalWindow">Оставить заявку</button>
+                <div class="mobile__descr">Nchernienko@stavagro.сom</div>
+                <a href="tel:+79624021236" class="mobile__descr">+7 (962) 402—12—36</a>
+                <a href="https://ru.kvernelandgroup.com/" class="mobile__diler">Официальный дилер Kverneland</a>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
@@ -47,7 +67,7 @@
         <!-- Модальное окно -->
         <div class="modalWindowBg">
             <div class="modalWindow">
-                <div class="modalWindow__tilte">Выберите тип услуги</div>
+                <div class="modalWindow__title">Выберите тип услуги</div>
                 <button class="modalWindow__closeBtn"></button>                                    
                 <form class="modalWindow__form" action="">
                     <div class="modalWindow__checkBlock">
@@ -65,6 +85,7 @@
         </div>
         <section class="bord">
             <img src="img/mainbg.png" alt="" class="bord__img">
+            <img src="img/mainMobile.png" alt="" class="mobileBord__img">
         </section>
         <div class="container">
             <a href="index.html" class="backToMainPage">Вернуться на главную страницу</a>
@@ -2152,6 +2173,7 @@
                 <img src="img/Logo.png" alt="" class="footer__logo__img">
             </div>           
             <div class="footer__email">Администратор — <span>Mchernienko@Stavagro.com</span></div>
+            <div class="footer__mobileemail">Администратор <span>Mchernienko@Stavagro.com</span></div>
             <hr class="footer__email__hr">
             <div class="footer__phone">
                 <a href="tel:+79624021236"">+7 (962) 402—12—36</a>

@@ -25,16 +25,22 @@
     <nav class="navigation">
         <div class="mobile">
             <img src="img/Logo.png" alt="logo" class="mobile__logo">
-            <button class="mobile__burger active">
+            <button class="mobile__burger">
                 <span></span>
             </button>
         </div>
         <div class="mobile__menu">
             <div class="mobile__list">
-                <a href="#header" class="mobile__link">Главная</a>
-                <a href="#mechanism" class="mobile__link">Техника</a>
-                <a href="#servic" class="mobile__link">Сервис</a>
-                <a href="#about" class="mobile__link">О нас</a>
+                <ul>
+                    <li><a href="#header" class="mobile__link">Главная</a></li>
+                    <li><a href="#mechanism" class="mobile__link">Техника</a></li>
+                    <li><a href="#servic" class="mobile__link">Сервис</a></li>
+                    <li><a href="#about" class="mobile__link">О нас</a></li>
+                </ul>
+                <button class="mobile__btn openModalWindow">Оставить заявку</button>
+                <div class="mobile__descr">Nchernienko@stavagro.сom</div>
+                <a href="tel:+79624021236" class="mobile__descr">+7 (962) 402—12—36</a>
+                <a href="https://ru.kvernelandgroup.com/" class="mobile__diler">Официальный дилер Kverneland</a>
             </div>
         </div>
         <div class="container">
@@ -60,7 +66,7 @@
         <a href="#header" class="scrolltotop hiddenscroll"></a>
         <div class="modalWindowBg">
             <div class="modalWindow">
-                <div class="modalWindow__tilte">Выберите тип услуги</div>
+                <div class="modalWindow__title">Выберите тип услуги</div>
                 <button class="modalWindow__closeBtn"></button>                                    
                 <form class="modalWindow__form" action="">
                     <div class="modalWindow__checkBlock">
@@ -78,29 +84,35 @@
         </div>
         <section class="bord">
             <img src="img/mainbg.png" alt="" class="bord__img">
+            <img src="img/mainMobile.png" alt="" class="mobileBord__img">
         </section>
         <section id="mechanism" class="mechanism">
             <div class="container">
                 <div class="mechanism__title">техника и запасные части</div>
+                <div class="mechanism__mobiletitle">техника и <br> запасные части</div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-12">
                         <a href="technical.html#kv" class="mechanism__link">
                             <img src="img/mechanism1.png" alt="" class="mechanism__img">
+                            <img src="img/mechanismmobile1.png" alt="" class="mechanism__mobileimg">
                         </a>    
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-12">
                         <a href="technical.html#li" class="mechanism__link">
                             <img src="img/mechanism2.png" alt="" class="mechanism__img">
+                            <img src="img/mechanismmobile2.png" alt="" class="mechanism__mobileimg">
                         </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-12">
                         <a href="technical.html#sa" class="mechanism__link">
                             <img src="img/mechanism3.png" alt="" class="mechanism__img">
+                            <img src="img/mechanismmobile3.png" alt="" class="mechanism__mobileimg">
                         </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-12">
                         <a href="technical.html#ra" class="mechanism__link">
                             <img src="img/mechanism4.png" alt="" class="mechanism__img">
+                            <img src="img/mechanismmobile4.png" alt="" class="mechanism__mobileimg">
                         </a>
                     </div>
                     <div class="col-md-8">
@@ -110,6 +122,16 @@
                             </a>
                             <a href="technical.html#technicalNSpareParts" class="mechanism__block__link">
                                 <img src="img/mechanism6.png" alt="" class="mechanism__img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mechanism__mobileblock">
+                            <a href="technical.html#technicalNSpareParts" class="mechanism__mobileblock__link">
+                                <img src="img/mechanismmobile5.png" alt="" class="mechanism__mobileimg">
+                            </a>
+                            <a href="technical.html#technicalNSpareParts" class="mechanism__mobileblock__link">
+                                <img src="img/mechanismmobile6.png" alt="" class="mechanism__mobileimg">
                             </a>
                         </div>
                     </div>
@@ -156,7 +178,16 @@
                         <img src="img/samasz.png" alt="" class="ofdil__img">
                         <img src="img/rainfine.png" alt="" class="ofdil__img">
                     </div>
-                </div>   
+                </div>  
+                <marquee behavior="" direction="" class="marq">
+                    <div class="ofdil__mobilegroup">
+                        <img src="img/kverneland.png" alt="" class="ofdil__img">
+                        <img src="img/kverneland_group.png" alt="" class="ofdil__img">
+                        <img src="img/liliani.png" alt="" class="ofdil__img">
+                        <img src="img/samasz.png" alt="" class="ofdil__img">
+                        <img src="img/rainfine.png" alt="" class="ofdil__img">
+                    </div>
+                </marquee> 
             </div>
         </section>
     </main>   
@@ -166,6 +197,7 @@
                 <img src="img/Logo.png" alt="" class="footer__logo__img">
             </div>           
             <div class="footer__email">Администратор — <span>Mchernienko@Stavagro.com</span></div>
+            <div class="footer__mobileemail">Администратор <span>Mchernienko@Stavagro.com</span></div>
             <hr class="footer__email__hr">
             <div class="footer__phone">
                 <a href="tel:+79624021236"">+7 (962) 402—12—36</a>

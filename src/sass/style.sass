@@ -8,6 +8,14 @@ header
     background: rgba(28, 28, 28, 0.9);
 .mobile
     display: none
+    &__menu
+        display: none
+.mobileBord__img 
+    display: none
+.mechanism__mobileimg
+    display: none
+.marq
+    display: none
 .subheader
     display: flex
     justify-content: space-between
@@ -22,7 +30,7 @@ header
         color: #FFFFFF;
         position: relative
         span
-            content: '2121'
+            content: ''
             display: block
             background-color: #fff
             width: 100%
@@ -109,11 +117,15 @@ main
         line-height: 46px
         text-transform: uppercase
         color: #000000
+    &__mobiletitle
+        display: none
     &__link
         display: block
         margin: 0 auto
         margin-top: 30px   
         height: 235px
+    &__mobileblock
+        display: none
     &__block
         height: 245px
         &__link
@@ -237,6 +249,8 @@ main
         padding: 35px 0
         img
             width: 160px
+    &__mobilegroup
+        display: none
 .footer
     padding: 20px 0 90px 0
     background: url('../img/footer_bg.jpg')center center/cover no-repeat
@@ -338,7 +352,7 @@ main
     border-radius: 10px
     padding: 30px 0 30px 0
     transition: 0.5s all
-    &__tilte
+    &__title
         font-style: normal
         font-weight: 500
         font-size: 24px
@@ -1368,14 +1382,17 @@ main
 @media screen and (max-width: 428px)
     header
         display: none
+    li
+        &:last-child
+            border-bottom: 1px solid #000 
     .logo   
         display: none
     .navigation
-        display: flex
+        display: block
         background: #FFF6EA
+        width: 100%
         height: 100px
-        align-items: center
-        position: relative
+        z-index: 100
         &__list
             display: none
         &__btn
@@ -1383,20 +1400,31 @@ main
     .mobile
         display: block
         width: 100%
+        height: 100px
+        background-color: #FFF6EA
+        z-index: 101
+        position: relative
         &__logo
             display: block
             margin: 0 auto
+            position: absolute
+            top: 15px
+            left: 50%
+            transform: translateX(-50%)
+            z-index: 101
         &__burger
             position: absolute
             display: block
-            width: 24px
-            height: 17px
+            width: 30px
+            height: 30px
             top: 50%
             transform: translateY(-50%)
             right: 15px
             border: none
             outline: none
             background-color: #FFF6EA
+            transition: .3s all
+            z-index: 101
             &:focus, &:active
                 border: none
                 outline: none
@@ -1407,10 +1435,11 @@ main
                 height: 1px
                 position: absolute
                 background-color: #000
+                transition: .3s all
             &::before
-                top: 0
+                top: 5px
             &::after
-                bottom: 0
+                bottom: 5px
             span
                 display: block
                 position: absolute
@@ -1420,21 +1449,307 @@ main
                 top: 50%
                 right: 0
                 transform: translateY(-50%)
+                transition: .1s all
                 opacity: 1
         &__burger.active
             &::before
                 top: 50%
                 rotate: 45deg
                 transform: translateY(-50%)
+                transition: .3s all
             &::after
                 top: 50%
                 rotate: -45deg
                 transform: translateY(-50%)
+                transition: .3s all
             span
                 opacity: 0
+        &__menu.active
+            top: 100px
+            transition: .5s all
+            z-index: 1
+            display: block
         &__menu
+            position: absolute
             width: 100%
             height: 476px
+            top: -480px
             background: #FFFFFF
             border: 1px solid #000000
             border-radius: 0px 0px 10px 10px
+            padding: 30px 0
+            transition: .5s all
+            z-index: 1
+            display: block
+        &__list
+            display: block
+            z-index: 1
+        &__link
+            display: block
+            width: 100%
+            font-weight: 400
+            font-size: 24px
+            line-height: 29px
+            text-transform: capitalize
+            color: #000000
+            text-align: center
+            padding: 5px 0
+            border-top: 1px solid #000
+            transition: .3s all
+            z-index: 1
+            &:hover
+                color: #000
+                outline: none
+                text-decoration: none
+                background-color: #FFE558
+                transition: .3s all
+        &__btn
+            display: block
+            margin: 50px auto
+            width: 290px
+            height: 55px
+            background: #007737
+            border-radius: 5px
+            font-weight: 700
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+            outline: none
+            border: none
+            z-index: 1
+            &:active, &:focus
+                outline: none
+                border: none
+        &__descr
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 22px
+            text-transform: capitalize
+            color: #000000
+            text-align: center
+            display: block
+            margin: 0 auto 20px auto
+            z-index: 1
+            &:hover
+                color: #000
+                outline: none
+                text-decoration: none
+        &__diler
+            font-style: normal
+            font-weight: 400
+            font-size: 16px
+            line-height: 22px
+            text-transform: capitalize
+            color: #000000
+            text-align: center
+            display: block
+            position: relative
+            margin: 0 auto
+            width: 280px
+            z-index: 1
+            &:hover
+                color: #000
+                outline: none
+                text-decoration: none
+            &::after  
+                content: ''
+                display: block
+                height: 1px
+                width: 100%
+                background-color: #000
+                margin: 0 auto
+    .bord
+        &__img
+            display: none            
+    .mobileBord__img            
+        display: block
+        width: 100%
+        height: 100%
+    .mechanism
+        padding-top: 80px
+        height: 100%
+        &__title
+            display: none
+        &__mobiletitle
+            display: block
+            font-weight: 700
+            font-size: 28px
+            line-height: 34px
+            text-transform: uppercase
+            color: #000000
+        &__link
+            width: 100%
+            height: 100%
+            display: block
+            margin-top: 30px
+        &__block
+            display: none
+        &__img
+            display: none
+        &__mobileblock
+            display: block
+            margin-top: 30px
+            &__link
+                margin-top: 30px
+                width: 100%
+                height: 100%
+        &__mobileimg
+            display: block
+            width: 100%
+            height: 100%
+    .service
+        padding: 80px 0 0 0
+        &__title
+            font-size: 28px
+            &::after
+                content: ''
+                display: block
+                background: url('../icons/settings.png') center center/cover no-repeat
+                width: 24px
+                height: 24px
+                position: absolute
+                left: 140px
+                bottom: 12px
+        &__descr
+            margin-top: 30px
+            font-size: 12px
+        &__btn
+            margin-top: 40px
+            width: 290px
+            height: 55px
+            font-size: 14px
+    .about
+        padding: 80px 0 0 0
+        &__title
+            font-size: 28px
+            &::after
+                content: ''
+                display: block
+                background: url('../icons/about.png') center center/cover no-repeat
+                width: 24px
+                height: 24px
+                position: absolute
+                left: 115px
+                bottom: 12px
+        &__descr
+            margin-top: 30px
+            font-size: 12px
+    .ofdil
+        padding: 80px 0 
+        &__title
+            font-size: 28px
+            &::after
+                content: ''
+                display: block
+                background: url('../icons/diler.png') center center/cover no-repeat
+                width: 24px
+                height: 22px
+                position: absolute
+                left: 150px
+                bottom: 12px
+        &__group
+            display: none
+        &__banner
+            height: 135px
+        .marq
+            display: block
+        &__mobilegroup
+            display: block
+            height: 135px
+            width: 100%
+            padding: 31px 0
+        &__img  
+            width: 160px
+            margin-right: 45px
+    .footer
+        &__email
+            display: none
+            &__hr
+                width: 290px
+                height: 1px
+                margin-top: 20px
+        &__mobileemail
+            font-style: normal
+            font-weight: 300
+            font-size: 18px
+            text-align: center
+            text-transform: capitalize
+            color: #FFFFFF
+            display: block
+            margin: 50px auto 0 auto
+            text-align: center
+            span
+                font-weight: 700
+        &__phone
+            margin-top: 20px
+            a
+                font-size: 18px
+            &__hr
+                width: 220px
+                height: 1px
+        &__inn
+            font-size: 18px
+    .modalWindow.active
+        width: 300px
+        height: 400px
+        z-index: 110
+        padding: 10px 0
+    .modalWindow
+        &__closeBtn
+            width: 18px
+            height: 18px
+            right: 15px
+            top: 15px
+        &__title
+            font-size: 16px
+        &__checkBlock
+            margin: 20px 30px 0 30px
+        &__form
+            input
+                width: 80%
+                height: 40px
+                margin-top: 20px
+            label
+                width: 110px
+                height: 50px
+                font-size: 18px
+                &::before 
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 110px
+                    height: 50px
+                    border: 1px solid #000000
+                    border-radius: 10px
+                &::after
+                    font-size: 18px
+        &__sendBtn
+            width: 80%
+            height: 46px
+            margin-top: 36px
+    .scrolltotop
+        right: 15px
+        bottom: 15px
+        z-index: 10
+    .backToMainPage
+        margin: 0 0 0 46px
+        padding-top: 30px
+        font-size: 12px
+        width: 202px
+        &::after
+            width: 24px
+            height: 17px
+            top: 34px 
+            left: -35px  
+
+    .technicalNSpareParts
+        padding: 30px 0 60px 0
+        &__title
+            font-size: 28px
+        &__brandsSort
+            margin-top: 30px
+            &__title
+                font-size: 18px

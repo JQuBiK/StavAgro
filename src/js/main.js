@@ -11,6 +11,8 @@ let btnLinkSort3 = document.getElementById('linkSort3');
 let btnLinkSort4 = document.getElementById('linkSort4');
 const filter = document.querySelectorAll('.filersec');
 let filterBtn = document.querySelectorAll('.sortPanel__btn');
+let burgerBtn = document.querySelector('.mobile__burger');
+let burgerMenu = document.querySelector('.mobile__menu');
 
 openModalbtns.forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -56,6 +58,11 @@ btn.onclick = function () {
 }
 window.onscroll = magic;
 
+burgerBtn.addEventListener('click', () => {
+	burgerBtn.classList.toggle('active');
+	burgerMenu.classList.toggle('active');
+})
+
 btnLinkSort1.addEventListener('click', () => {
     btnLinkSort1.classList.toggle('active');
     btnLinkSort2.classList.remove('active');
@@ -80,6 +87,8 @@ btnLinkSort4.addEventListener('click', () => {
     btnLinkSort2.classList.remove('active');
     btnLinkSort3.classList.remove('active');
 });
+
+
 
 $(document).ready(function(){
 	$('#lilianimore1').click(function(){
@@ -147,7 +156,6 @@ document.querySelector('.sortPanel').addEventListener('click', event =>{
 		}
 	});
 });
-
 
 
 
