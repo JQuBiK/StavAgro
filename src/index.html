@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    
     <header id="header">
         <div class="container">
             <div class="subheader">
@@ -68,18 +70,18 @@
             <div class="modalWindow">
                 <div class="modalWindow__title">Выберите тип услуги</div>
                 <button class="modalWindow__closeBtn"></button>                                    
-                <form class="modalWindow__form" action="">
+                <form id="formSend" class="modalWindow__form" action="php/calc.php">
                     <div class="modalWindow__checkBlock">
                         <input class="modalWindow__check__technical" type="radio" id="technical" name="service">
                         <label for="technical" class="modalWindow__check__lable__technical">Техника</label>
                         <input class="modalWindow__check__technical" type="radio" id="service" name="service">
                         <label for="service" class="modalWindow__check__lable__service">Сервис</label>
                     </div>    
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" class="phone" placeholder="Телефон">
-                    <input type="email" placeholder="Почта">
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="tel" name="phone" class="phone" placeholder="Телефон">
+                    <input type="email" name="email" placeholder="Почта">
                 </form>
-                <button type="submit" class="modalWindow__sendBtn">Заказать звонок</button>
+                <button id="btnSend" type="submit" class="modalWindow__sendBtn">Заказать звонок</button>
             </div>         
         </div>
         <section class="bord">
@@ -179,7 +181,7 @@
                         <img src="img/rainfine.png" alt="" class="ofdil__img">
                     </div>
                 </div>  
-                <marquee behavior="" direction="" class="marq">
+                <marquee scrolldelay="60" truespeed behavior="" direction="" class="marq">
                     <div class="ofdil__mobilegroup">
                         <img src="img/kverneland.png" alt="" class="ofdil__img">
                         <img src="img/kverneland_group.png" alt="" class="ofdil__img">

@@ -27,68 +27,25 @@ btnCloseWindow.addEventListener('click', () => {
     modalWindow.classList.remove('active');
 });
 
-document.addEventListener('click', (e) => {
-    if(e.target === modalWindowBg) {
-        modalWindowBg.classList.remove('active');
-        modalWindow.classList.remove('active');
-    }
+
+$('#btnSend').click(function(){
+	$.post(
+		'php/calc.php',
+
+		{
+			technical: document.getElementById("technical").checked,
+			service: document.getElementById("service").checked,
+			name: document.forms["formSend"]["name"].value,
+			phone: document.forms["formSend"]["phone"].value,
+			email: document.forms["formSend"]["email"].value
+		},
+
+		function(msg){
+			console.log(msg)
+		}
+	);
+	return false;
 });
-
-jQuery(function($){
-	$(".phone").mask("+7 (999) 999 - 99 99");
-});
-
-
-$('a[href^="#"').on('click', function() {
-    let href = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(href).offset().top
-    });
-    return false;
-});
-
-let btn = document.querySelector('.scrolltotop')
-function magic() {
-  if (window.pageYOffset > 1800) {
-  btn.classList.remove('hiddenscroll')
-  } else { btn.classList.add('hiddenscroll') }
-}
-btn.onclick = function () {
-	window.scrollTo(0,0)
-}
-window.onscroll = magic;
-
-burgerBtn.addEventListener('click', () => {
-	burgerBtn.classList.toggle('active');
-	burgerMenu.classList.toggle('active');
-})
-
-btnLinkSort1.addEventListener('click', () => {
-    btnLinkSort1.classList.toggle('active');
-    btnLinkSort2.classList.remove('active');
-    btnLinkSort3.classList.remove('active');
-    btnLinkSort4.classList.remove('active');
-});
-btnLinkSort2.addEventListener('click', () => {
-    btnLinkSort2.classList.toggle('active');
-    btnLinkSort1.classList.remove('active');
-    btnLinkSort3.classList.remove('active');
-    btnLinkSort4.classList.remove('active');
-});
-btnLinkSort3.addEventListener('click', () => {
-    btnLinkSort3.classList.toggle('active');
-    btnLinkSort1.classList.remove('active');
-    btnLinkSort2.classList.remove('active');
-    btnLinkSort4.classList.remove('active');
-});
-btnLinkSort4.addEventListener('click', () => {
-    btnLinkSort4.classList.toggle('active');
-    btnLinkSort1.classList.remove('active');
-    btnLinkSort2.classList.remove('active');
-    btnLinkSort3.classList.remove('active');
-});
-
-
 
 $(document).ready(function(){
 	$('#lilianimore1').click(function(){
@@ -156,6 +113,80 @@ document.querySelector('.sortPanel').addEventListener('click', event =>{
 		}
 	});
 });
+
+
+
+document.addEventListener('click', (e) => {
+    if(e.target === modalWindowBg) {
+        modalWindowBg.classList.remove('active');
+        modalWindow.classList.remove('active');
+    }
+});
+
+jQuery(function($){
+	$(".phone").mask("+7 (999) 999 - 99 99");
+});
+
+
+$('a[href^="#"').on('click', function() {
+    let href = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
+});
+
+let btn = document.querySelector('.scrolltotop')
+function magic() {
+  if (window.pageYOffset > 1800) {
+  btn.classList.remove('hiddenscroll')
+  } else { btn.classList.add('hiddenscroll') }
+}
+btn.onclick = function () {
+	window.scrollTo(0,0)
+}
+window.onscroll = magic;
+
+burgerBtn.addEventListener('click', () => {
+	burgerBtn.classList.toggle('active');
+	burgerMenu.classList.toggle('active');
+})
+
+var swiper = new Swiper(".mySwiper", {
+	pagination: {
+	  el: ".swiper-pagination",
+	  dynamicBullets: true,
+	},
+});
+
+btnLinkSort1.addEventListener('click', () => {
+    btnLinkSort1.classList.toggle('active');
+    btnLinkSort2.classList.remove('active');
+    btnLinkSort3.classList.remove('active');
+    btnLinkSort4.classList.remove('active');
+});
+btnLinkSort2.addEventListener('click', () => {
+    btnLinkSort2.classList.toggle('active');
+    btnLinkSort1.classList.remove('active');
+    btnLinkSort3.classList.remove('active');
+    btnLinkSort4.classList.remove('active');
+});
+btnLinkSort3.addEventListener('click', () => {
+    btnLinkSort3.classList.toggle('active');
+    btnLinkSort1.classList.remove('active');
+    btnLinkSort2.classList.remove('active');
+    btnLinkSort4.classList.remove('active');
+});
+btnLinkSort4.addEventListener('click', () => {
+    btnLinkSort4.classList.toggle('active');
+    btnLinkSort1.classList.remove('active');
+    btnLinkSort2.classList.remove('active');
+    btnLinkSort3.classList.remove('active');
+});
+
+
+
+
 
 
 
