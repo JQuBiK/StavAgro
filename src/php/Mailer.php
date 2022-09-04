@@ -8,7 +8,7 @@ require_once 'Config.php';
 
 class Mailer {
 
-	private $phpMailer;
+	public $phpMailer;
 		
 	function __construct() {
 		$this->phpMailer = new PHPMailer();
@@ -29,26 +29,30 @@ class Mailer {
 		$this->phpMailer->smtpClose();
 	}
 
-	public function sendMail($sendTo, $subject, $mail, $phone) {
-		$this->phpMailer->setFrom("dimibazi123@gmail.com", "DMITRIISUKABLYAD");
+	public function sendMail($sendTo, $subject, $name, $mail, $phone) {
+		$this->phpMailer->setFrom("freezof1x@gmail.com", "Email bot");
 		$this->phpMailer->Subject = $subject;
-		$this->phpMailer->Body = $this->toTable($mail, $phone);
+		$this->phpMailer->Body = $this->toTable($name, $mail, $phone);
 		$this->phpMailer->isHTML(true);	
 		$this->phpMailer->addAddress($sendTo);
 		
-		return $this->phpMailer->send();
+		return $this->phpMailer->send() == true ? "true" : "false";
 
 	}
 
-	private function toTable($mail, $phone) {
+	private function toTable($name, $mail, $phone) {
 		return "<table border=1>" .
+			"<tr>" .
+			"<td> Имя клиента </td>" .
+			"<td>" . $name . "</td>" .
+			"</tr>" .
+			"<tr>" .
+			"<td> Номер телефона </td> " .
+			"<td>" . $phone . "</td>" .
+			"</tr>" .
 			"<tr>" .
 			"<td> Email </td> " .
 			"<td>" . $mail . "</td>" .
-			"</tr>" .
-			"<tr>" .
-			"<td> Phone Number </td> " .
-			"<td>" . $phone . "</td>" .
 			"</tr>" .
 			"</table>";
 	}
